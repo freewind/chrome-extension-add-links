@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "add-links",
+  "description": "Add predefined links to specified text",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "./node_modules/kotlin/kotlin.js",
+        "./generated/content-script.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}

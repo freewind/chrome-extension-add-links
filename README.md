@@ -1,16 +1,24 @@
-Kotlin JS Hello World Demo
+Chrome Extension Add Links
 =======================
 
-Hello world from kotlin-js.
+Add predefined links to specified text.
 
-
-Run:
+Build:
 
 ```
 ./gradlew compileKotlin2Js
-open index.html
+cd extension
+npm install
 ```
 
-You will see "Hello, Kotlin!" in console of your browser's developer panel.
+Then add `extension` directory to Chrome extensions.
 
+Test:
+-----
 
+```
+npm install -g http-server
+http-server ./public -o
+```
+
+On the page, the keywords should be replaced by links.
