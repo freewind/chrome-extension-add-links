@@ -5,8 +5,8 @@ import kotlin.browser.document
 
 private val links: List<Pair<List<String>, String>> = listOf(
         listOf("FCoin", "Fcoin", "fcoin") to "https://www.fcoin.com/i/Nybzz",
-        listOf("Binance", "binance", "币安") to "https://www.binance.com/?ref=13925629",
-        listOf("Huobi", "huobi", "火币") to "https://www.huobi.br.com/zh-cn/topic/invited/?invite_code=76dk3"
+        listOf("Binance", "binance", "币安") to "https://www.binance.top/?ref=13925629",
+        listOf("Huobi", "huobi", "火币") to "https://www.huobi.br.com/topic/invited/?invite_code=76dk3"
 )
 
 fun main(args: Array<String>) {
