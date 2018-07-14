@@ -31,15 +31,16 @@ fun walkAll(element: Element, fn: (Text) -> Node?) {
     val children = element.childNodes
     for (i in 0 until children.length) {
         children[i]?.let { child ->
-            if (child is Text) {
-                val newNode = fn(child)
-                if (newNode != null) {
-                    element.insertBefore(newNode, child)
-                    element.removeChild(child)
+            when (child) {
+                is HTMLAnchorElement -> Unit // ignore links
+                is Text -> {
+                    val newNode = fn(child)
+                    if (newNode != null) {
+                        element.insertBefore(newNode, child)
+                        element.removeChild(child)
+                    }
                 }
-            }
-            if (child is Element) {
-                walkAll(child, fn)
+                is Element -> walkAll(child, fn)
             }
         }
     }
