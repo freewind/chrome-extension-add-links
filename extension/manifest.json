@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "add-links",
   "description": "Add predefined links to specified text",
-  "version": "0.1",
+  "version": "0.2",
   "content_scripts": [
     {
       "matches": [
@@ -10,8 +10,7 @@
         "https://*/*"
       ],
       "js": [
-        "./node_modules/kotlin/kotlin.js",
-        "./generated/content-script.js"
+        "./bundle.js"
       ]
     }
   ],
