@@ -38030,7 +38030,7 @@ this['chrome-extension-add-links'] = function (_, Kotlin) {
   var package$example = _.example || (_.example = {});
   package$example.main_kand9s$ = main;
   package$example.walkAll_7ky27$ = walkAll;
-  links = listOf([to(listOf(['FCoin', 'Fcoin', 'fcoin']), 'https://y0.cn/fcoin'), to(listOf(['Binance', 'binance', '\u5E01\u5B89']), 'https://y0.cn/binance'), to(listOf(['Huobi', 'huobi', '\u706B\u5E01']), 'https://y0.cn/huobi'), to(listOf(['CoinEx', 'coinex']), 'https://y0.cn/coinex')]);
+  links = listOf([to(listOf(['FCoin', 'Fcoin', 'fcoin']), 'https://y0.cn/fcoin'), to(listOf(['Binance', 'binance', '\u5E01\u5B89']), 'https://y0.cn/binance'), to(listOf(['Huobi', 'huobi', '\u706B\u5E01', 'HADAX', 'hadax', '\u6D77\u5E26\u4E1D']), 'https://y0.cn/huobi'), to(listOf(['CoinEx', 'coinex']), 'https://y0.cn/coinex')]);
   main([]);
   Kotlin.defineModule('chrome-extension-add-links', _);
   return _;
